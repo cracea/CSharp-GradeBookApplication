@@ -18,7 +18,6 @@ namespace GradeBook.GradeBooks
                 throw new InvalidOperationException("Shi fashi weii?");
             }
 
-            // get 20% from 
             var threshold = (int)Math.Ceiling(Students.Count * 0.2);
             var grades = Students.OrderByDescending(e => e.AverageGrade).Select(e => e.AverageGrade).ToList();
 
